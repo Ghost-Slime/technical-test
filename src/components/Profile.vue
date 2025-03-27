@@ -1,5 +1,6 @@
 <template>
-  <div class="bg-blue-400 text-white p-6 rounded-lg flex items-center gap-4">
+  <div class="bg-blue-400 text-white">
+    <div class="container flex items-center gap-4 mx-auto p-6">
     <Avatar :image="AvatarImage" size="xlarge" />
     <div class="flex">
       <div>
@@ -21,6 +22,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 </template>
 

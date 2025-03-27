@@ -1,11 +1,16 @@
 <template>
-  <div class="min-h-screen bg-white">
-    <main class="container mx-auto p-6">
-      <!-- Header -->
+  <div class="min-h-screen bg-white flex flex-col items-center">
+    <!-- Header -->
+    <div class="w-full">
       <Header />
+    </div>
 
-      <!-- Profile Section -->
+    <!-- Profile Section -->
+    <div class="w-full">
       <Profile />
+    </div>
+
+    <main class="container mx-auto p-6">
 
       <!-- Users Section -->
       <div class="mt-6">
