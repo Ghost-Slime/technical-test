@@ -8,12 +8,12 @@
       </div>
       <div class="flex items-end ml-6">
         <div class="ml-auto flex gap-2">
-          <Button label="Send Message" class="p-button-outlined bg-white! text-blue-400! hover:bg-blue-400! hover:text-white!">
+          <Button label="Send Message" class="p-button-outlined border-white! bg-white! text-blue-400! hover:bg-blue-400! hover:text-white!">
             <template #icon>
               <Send :size="16" />
             </template>
           </Button>
-          <Button label="Add Friend" class="p-button-outlined text-white! hover:bg-white! hover:text-blue-400!">
+          <Button label="Add Friend" class="p-button-outlined border-white! text-white! hover:bg-white! hover:text-blue-400!">
             <template #icon>
               <Plus :size="16" />
             </template>
