@@ -19,7 +19,7 @@
           paginator
           :rows="5"
           :rowsPerPageOptions="[5, 10, 20, 50]"
-          class="custom-table"
+          class="custom-table cursor-pointer"
           @row-click="openModal"
         >
           <Column field="date" header="Date" class="bg-white! text-black!">
