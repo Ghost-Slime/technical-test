@@ -38,7 +38,7 @@
           </Column>
           <Column field="gender" header="Gender" class="bg-white! text-black!">
             <template #body="slotProps">
-              <div>{{ slotProps.data.gender }}</div>
+              <div>{{ slotProps.data.gender.charAt(0).toUpperCase() + slotProps.data.gender.slice(1) }}</div>
             </template>
           </Column>
           <Column
@@ -57,7 +57,7 @@
           </Column>
         </DataTable>
         <div class="flex justify-center mt-4">
-          <Button label="Refresh" class="border-0 bg-blue-400! text-white!" @click="fetchUsers">
+          <Button label="Refresh" class="border-0 bg-blue-400! text-white! hover:text-blue-400!" @click="fetchUsers">
             <template #icon>
               <RefreshCw  :size="16" />
             </template>
@@ -84,7 +84,7 @@
           </div>
           <div class="grid grid-cols-2 gap-4 mb-4">
             <label class="font-medium pl-8">Gender:</label>
-            <p>{{ selectedUser.gender }}</p>
+            <p>{{ selectedUser.gender.charAt(0).toUpperCase() + selectedUser.gender.slice(1) }}</p>
           </div>
           <div class="grid grid-cols-2 gap-4 mb-4">
             <label class="font-medium pl-8">Country:</label>
