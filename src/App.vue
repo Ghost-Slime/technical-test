@@ -57,7 +57,7 @@
           </Column>
         </DataTable>
         <div class="flex justify-center mt-4">
-          <Button label="Refresh" class="border-0 bg-blue-400! text-white! hover:text-blue-400!" @click="fetchUsers">
+          <Button label="Refresh" class="border-0 bg-blue-400! text-white!" @click="fetchUsers">
             <template #icon>
               <RefreshCw  :size="16" />
             </template>
