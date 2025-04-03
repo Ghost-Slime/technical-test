@@ -6,7 +6,7 @@
     </div>
 
     <!-- Profile Section -->
-    <div class="w-full">
+    <div class="w-full mb-4">
       <Profile />
     </div>
 
@@ -155,37 +155,39 @@ const openModal = (user) => {
 </script>
 
 <style scoped>
-.custom-table :deep(.p-datatable-tbody) {
-  display: table-row-group; /* Ensures proper alignment */
+.custom-table :deep(.p-datatable) {
+  display: flex;
+  flex-direction: column;
 }
 
-.custom-table :deep(.p-datatable-thead > tr) {
-  background: white;
-  font-weight: bold;
-}
-
-/* Improve row styling */
-.custom-table :deep(.p-datatable-tbody > tr) {
-  background: white;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  padding: 16px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-  display: table-row; /* Fix table row layout */
-}
-
-/* Fix column alignment */
-.custom-table :deep(.p-datatable-tbody > tr > td) {
-  padding: 14px;
+.custom-table :deep(.p-datatable-header-cell){
   border: none;
 }
 
-/* Center text in headers */
-.custom-table :deep(.p-datatable-thead th) {
+.custom-table :deep(.p-datatable-thead > tr) {
+  display: flex;
+  padding: 12px;
+}
+
+.custom-table :deep(.p-datatable-thead > tr > th),
+.custom-table :deep(.p-datatable-tbody > tr > td) {
+  flex: 1;
   text-align: left;
-  padding: 14px;
-  color: rgba(0, 0, 0, 0.5); /* Light gray text */
+  padding: 12px;
+}
+
+.custom-table :deep(.p-datatable-tbody > tr) {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  padding: 12px;
+}
+
+.custom-table :deep(.p-datatable-tbody > tr > td) {
+  border: none;
 }
 
 /* Hover effect */
